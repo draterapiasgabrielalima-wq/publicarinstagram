@@ -19,6 +19,11 @@ catch { console.error('Playwright não encontrado. Abra o HTML no navegador e us
   if (!pdf && !png) pdf = true;
   const src = path.resolve(file);
   const base = src.replace(/\.html?$/i, '');
+  // Garante que a pasta da marca (logos) esteja ao lado do HTML, pois os modelos usam src="marca/..."
+  const fs = require('fs');
+  const marcaSkill = path.join(__dirname, '..', 'assets', 'marca');
+  const marcaLocal = path.join(path.dirname(src), 'marca');
+  if (!fs.existsSync(marcaLocal) && fs.existsSync(marcaSkill)) fs.cpSync(marcaSkill, marcaLocal, { recursive: true });
   const browser = await chromium.launch();
   const page = await browser.newPage({ viewport: { width: 900, height: 1200 }, deviceScaleFactor: 2 });
   await page.goto(pathToFileURL(src).href, { waitUntil: 'networkidle' });

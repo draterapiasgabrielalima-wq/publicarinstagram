@@ -4,42 +4,48 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Boas-vindas WhatsApp</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Gilda+Display&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-  :root{--bg:#FBF8F4;--nude:#EFE4DA;--rose:#E8D3C8;--ink:#2E2A27;--muted:#7A6E66;--gold:#B8976A;--line:#D9C7B2;}
+  :root{--bg:#FBF9F4;--cream:#F3EEE0;--nude:#F3EEE0;--rose:#E9E1C8;--ink:#141A3C;--muted:#5F6480;--gold:#A08B31;--gold-light:#CDBF8A;--navy:#001278;--navy-deep:#000E57;--line:#E2D9BC;--ok:#3F6B4F;--no:#9A4A3E;
+  --navy-grad:linear-gradient(135deg,#000E57 0%,#001288 50%,#000E5E 100%);}
   *{box-sizing:border-box;margin:0;padding:0}
   body{background:#e9e4de;font-family:Montserrat,sans-serif;font-weight:300;color:var(--ink);padding:24px 16px;display:flex;flex-direction:column;align-items:center;gap:24px}
   /* cada card = 540x675 CSS px → exportado em 1080x1350 (formato 4:5) */
   .wa-card{width:540px;height:675px;max-width:100%;background:var(--bg);position:relative;overflow:hidden;padding:56px 48px;display:flex;flex-direction:column}
-  .wa-card.dark{background:var(--ink);color:var(--bg)}
-  .wa-card.nude{background:linear-gradient(170deg,var(--bg) 0%,var(--nude) 100%)}
+  .wa-card.dark{background:var(--navy-grad);color:#fff}
+  .dark h1,.dark h2{color:#fff}
+  .wa-card.nude{background:linear-gradient(170deg,var(--bg) 0%,var(--cream) 100%)}
   .frame{position:absolute;inset:18px;border:1px solid var(--line);pointer-events:none}
-  .dark .frame{border-color:#5a504a}
-  h1,h2{font-family:"Cormorant Garamond",serif;font-weight:400;line-height:1.08}
+  .dark .frame{border-color:rgba(205,191,138,.45)}
+  h1,h2{font-family:"Gilda Display",serif;font-weight:400;line-height:1.08;color:var(--navy-deep)}
   h1{font-size:50px}
   h2{font-size:38px}
-  em{font-style:italic;color:var(--gold)}
-  .eyebrow{font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:18px}
+  em{font-family:"EB Garamond",serif;font-style:italic;color:var(--gold)}
+  .dark em{color:var(--gold-light)}
+  .dark .eyebrow{color:var(--gold-light)}
+  .logo{display:block;margin:0 auto}
+  .lotus{height:18px;vertical-align:middle;margin-right:10px}
+  .eyebrow{font-family:Cinzel,serif;font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:18px}
   .rule{width:44px;height:1px;background:var(--gold);margin:22px 0}
   p{font-size:16px;line-height:1.65;color:var(--muted)}
-  .dark p{color:#d8cfc6}
+  .dark p{color:#D9DCEB}
   .sig{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
-  .dark .sig{color:#a89d93}
-  .mono{font-family:"Cormorant Garamond",serif;font-size:26px;letter-spacing:.1em;color:var(--gold)}
-  .count{font-family:"Cormorant Garamond",serif;font-size:14px;color:var(--gold)}
+  .dark .sig{color:#B9BED8}
+  .mono{font-family:"EB Garamond",serif;font-size:26px;letter-spacing:.1em;color:var(--gold)}
+  .count{font-family:"EB Garamond",serif;font-size:14px;color:var(--gold)}
   .steps{list-style:none;margin-top:8px}
   .steps li{display:flex;gap:18px;padding:13px 0;border-bottom:1px solid var(--line)}
-  .steps .n{font-family:"Cormorant Garamond",serif;font-size:30px;color:var(--gold);line-height:1;min-width:28px}
+  .steps .n{font-family:"EB Garamond",serif;font-size:30px;color:var(--gold);line-height:1;min-width:28px}
   .steps b{display:block;font-weight:500;font-size:17px;color:var(--ink);margin-bottom:2px}
   .steps span{font-size:14.5px;color:var(--muted);line-height:1.5}
   .pillars{display:grid;grid-template-columns:1fr;gap:20px;margin-top:6px}
   .pillar{border-left:1px solid var(--gold);padding:4px 0 4px 16px}
   .pillar b{font-weight:500;font-size:17px;display:block}
-  .dark .pillar span{color:#cfc5bb}
+  .dark .pillar span{color:#C9CDE2}
   .pillar span{font-size:14.5px;color:var(--muted)}
   .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
   .tag{border:1px solid var(--gold);padding:10px 16px;font-size:14px;letter-spacing:.04em;background:#fff6}
-  .cta{margin-top:26px;border:1px solid var(--gold);padding:16px 20px;text-align:center;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+  .cta{margin-top:26px;border:1px solid var(--gold-light);padding:16px 20px;text-align:center;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-light)}
   .center{justify-content:center;text-align:center;align-items:center}
   .center .rule{margin:24px auto}
 </style>
@@ -49,12 +55,12 @@
 <!-- CARD 1 — BOAS-VINDAS -->
 <section class="wa-card nude center">
   <div class="frame"></div>
-  <div class="mono" style="margin-bottom:40px">G L</div>
+  <img class="logo" src="marca/logo-dourado.png" alt="Dra. Gabriela Lima — Estética Integrativa" style="width:330px;margin-bottom:44px">
   <div class="eyebrow">Seja muito bem-vinda</div>
   <h1>Que bom ter<br>você <em>aqui</em></h1>
   <div class="rule"></div>
   <p style="max-width:360px">Preparamos este material para você conhecer como cuidamos de cada paciente — com calma, planejamento e muita atenção ao que é único em você.</p>
-  <div class="sig" style="position:absolute;bottom:44px;left:48px;right:48px"><span>Dra. Gabriela Lima</span><span class="count">01/06</span></div>
+  <div class="sig" style="position:absolute;bottom:44px;left:48px;right:48px"><span><img class="lotus" src="marca/simbolo-lotus-dourado.png" alt="">Dra. Gabriela Lima</span><span class="count">01/06</span></div>
 </section>
 
 <!-- CARD 2 — FILOSOFIA -->
@@ -68,7 +74,7 @@
     <div class="pillar"><b>Estética regenerativa</b><span>Estimulamos o seu próprio colágeno e a qualidade da pele.</span></div>
     <div class="pillar"><b>Naturalidade</b><span>Você descansada e bem cuidada — nunca “feita”.</span></div>
   </div>
-  <div class="sig"><span>Dra. Gabriela Lima</span><span class="count">02/06</span></div>
+  <div class="sig"><span><img class="lotus" src="marca/simbolo-lotus-dourado.png" alt="">Dra. Gabriela Lima</span><span class="count">02/06</span></div>
 </section>
 
 <!-- CARD 3 — JORNADA -->
@@ -82,7 +88,7 @@
     <li><div class="n">3</div><div><b>Tratamento</b><span>Procedimentos seguros, no seu ritmo, com produtos registrados na ANVISA.</span></div></li>
     <li><div class="n">4</div><div><b>Acompanhamento</b><span>Retornos e cuidado contínuo para manter seu resultado.</span></div></li>
   </ul>
-  <div class="sig"><span>Dra. Gabriela Lima</span><span class="count">03/06</span></div>
+  <div class="sig"><span><img class="lotus" src="marca/simbolo-lotus-dourado.png" alt="">Dra. Gabriela Lima</span><span class="count">03/06</span></div>
 </section>
 
 <!-- CARD 4 — O QUE CUIDAMOS -->
@@ -104,7 +110,7 @@
     <span class="tag">Ozonoterapia</span>
   </div>
   <p style="margin-top:26px">A indicação certa para você é definida na avaliação — porque nenhum rosto é igual ao outro.</p>
-  <div class="sig"><span>Dra. Gabriela Lima</span><span class="count">04/06</span></div>
+  <div class="sig"><span><img class="lotus" src="marca/simbolo-lotus-dourado.png" alt="">Dra. Gabriela Lima</span><span class="count">04/06</span></div>
 </section>
 
 <!-- CARD 5 — A CONSULTA -->
@@ -118,19 +124,20 @@
     <li><div class="n">·</div><div><b>Plano e investimento</b><span>Você sai sabendo exatamente o que faz sentido para você.</span></div></li>
   </ul>
   <p style="margin-top:20px;font-size:13px"><b style="font-weight:500;color:var(--ink)">Dica:</b> se puder, venha sem maquiagem e traga a lista dos medicamentos que usa.</p>
-  <div class="sig"><span>Dra. Gabriela Lima</span><span class="count">05/06</span></div>
+  <div class="sig"><span><img class="lotus" src="marca/simbolo-lotus-dourado.png" alt="">Dra. Gabriela Lima</span><span class="count">05/06</span></div>
 </section>
 
 <!-- CARD 6 — PRÓXIMO PASSO -->
 <section class="wa-card dark center">
   <div class="frame"></div>
+  <img class="logo" src="marca/simbolo-lotus-dourado.png" alt="" style="width:64px;margin-bottom:26px">
   <div class="eyebrow">Próximo passo</div>
   <h1>Vamos cuidar<br>de <em>você?</em></h1>
   <div class="rule"></div>
   <p style="max-width:360px">Responda esta mensagem e a Amanda reserva o melhor horário para a sua consulta de avaliação.</p>
   <div class="cta">Agende sua avaliação</div>
   <p style="margin-top:22px;font-size:12px">[endereço] · [@instagram]</p>
-  <div class="sig" style="position:absolute;bottom:44px;left:48px;right:48px"><span>Dra. Gabriela Lima · [registro]</span><span class="count">06/06</span></div>
+  <div class="sig" style="position:absolute;bottom:44px;left:48px;right:48px"><span><img class="lotus" src="marca/simbolo-lotus-dourado.png" alt="">Dra. Gabriela Lima · [registro]</span><span class="count">06/06</span></div>
 </section>
 
 </body>
