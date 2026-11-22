@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plano de Tratamento</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#FBF8F4;--nude:#EFE4DA;--rose:#E8D3C8;--ink:#2E2A27;--muted:#7A6E66;--gold:#B8976A;--line:#D9C7B2;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  @page{size:A4;margin:0}
+  body{background:#e9e4de;font-family:Montserrat,sans-serif;font-weight:300;color:var(--ink);font-size:10.5pt;line-height:1.6;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .page{width:210mm;min-height:297mm;margin:0 auto 12px;background:var(--bg);padding:22mm 20mm;position:relative;overflow:hidden;page-break-after:always}
+  .page:last-child{page-break-after:auto}
+  @media print{body{background:none}.page{margin:0}}
+  @media (max-width:820px){.page{width:100%;min-height:auto;padding:28px 18px}}
+  h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:500;color:var(--ink);line-height:1.15}
+  h2{font-size:24pt;margin-bottom:4px}
+  h3{font-size:15pt;margin-bottom:2px}
+  .eyebrow{font-size:7.5pt;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:500}
+  .rule{width:48px;height:1px;background:var(--gold);margin:14px 0 22px}
+  .muted{color:var(--muted)}
+  .footer{position:absolute;bottom:12mm;left:20mm;right:20mm;display:flex;justify-content:space-between;font-size:7.5pt;color:var(--muted);letter-spacing:.08em;border-top:1px solid var(--line);padding-top:8px}
+
+  /* capa */
+  .cover{display:flex;flex-direction:column;justify-content:center;text-align:center;background:linear-gradient(180deg,var(--bg) 0%,var(--nude) 100%)}
+  .cover .mono{font-family:"Cormorant Garamond",serif;font-size:40pt;color:var(--gold);letter-spacing:.06em;margin-bottom:28mm}
+  .cover h1{font-size:40pt;font-weight:400}
+  .cover .name{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:26pt;color:var(--gold);margin:10mm 0 4mm}
+  .cover .quote{margin-top:30mm;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:15pt;color:var(--muted)}
+  .cover .rule{margin:14px auto 0}
+
+  /* listas */
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:14mm}
+  @media (max-width:820px){.two{grid-template-columns:1fr;gap:20px}}
+  .list{list-style:none}
+  .list li{padding:9px 0 9px 22px;border-bottom:1px solid var(--line);position:relative}
+  .list li::before{content:"";position:absolute;left:2px;top:17px;width:8px;height:8px;border:1px solid var(--gold);border-radius:50%}
+  .quote-box{background:var(--nude);padding:14px 18px;border-left:2px solid var(--gold);font-family:"Cormorant Garamond",serif;font-style:italic;font-size:14pt;margin:18px 0 26px}
+
+  /* jornada */
+  .timeline{position:relative;margin-top:8px;padding-left:34px}
+  .timeline::before{content:"";position:absolute;left:11px;top:6px;bottom:6px;width:1px;background:var(--gold)}
+  .phase{position:relative;margin-bottom:30px}
+  .phase .dot{position:absolute;left:-34px;top:0;width:23px;height:23px;border-radius:50%;background:var(--bg);border:1px solid var(--gold);font-family:"Cormorant Garamond",serif;font-size:11pt;color:var(--gold);display:flex;align-items:center;justify-content:center}
+  .phase .when{font-size:7.5pt;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+  .phase .procs{font-weight:500;margin:2px 0 4px}
+  .phase .why{color:var(--muted);font-size:10pt}
+
+  /* cards */
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
+  @media (max-width:820px){.cards{grid-template-columns:1fr}}
+  .card{border:1px solid var(--line);padding:14px 16px;background:#fff8}
+  .card .meta{display:flex;flex-wrap:wrap;gap:2px 14px;font-size:8pt;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;margin:4px 0 6px}
+  .card p{font-size:9.5pt;color:var(--muted)}
+  .card .meta span{white-space:nowrap}
+
+  /* tabela */
+  table{width:100%;border-collapse:collapse;margin-top:8px;font-size:9.5pt}
+  th{font-weight:500;font-size:7.5pt;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);text-align:left;padding:8px 6px;border-bottom:1px solid var(--gold)}
+  td{padding:9px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+
+  .invest{background:var(--ink);color:var(--bg);padding:20px 22px;margin-top:22px}
+  .invest h3{color:var(--bg)}
+  .invest .total{font-family:"Cormorant Garamond",serif;font-size:28pt;color:var(--gold)}
+  .invest p{font-size:9pt;opacity:.8}
+  .sign{margin-top:24mm;text-align:center}
+  .sign .line{width:60mm;height:1px;background:var(--ink);margin:0 auto 8px}
+  .sign .who{font-family:"Cormorant Garamond",serif;font-size:16pt}
+</style>
+</head>
+<body>
+
+<!-- ================= PÁGINA 1 — CAPA ================= -->
+<section class="page cover">
+  <div class="mono">G L</div>
+  <div class="eyebrow">Estética Regenerativa &amp; Harmonização Facial</div>
+  <h1>Plano de Tratamento<br>Personalizado</h1>
+  <div class="name">Mariana Souza</div>
+  <div class="muted">Avaliação realizada em 22 de novembro de 2026</div>
+  <div class="quote">“Antes de qualquer agulha, existe planejamento.”</div>
+  <div class="rule"></div>
+</section>
+
+<!-- ================= PÁGINA 2 — AVALIAÇÃO E OBJETIVOS ================= -->
+<section class="page">
+  <div class="eyebrow">01 · Sua avaliação</div>
+  <h2>O que observamos no seu rosto</h2>
+  <div class="rule"></div>
+
+  <div class="quote-box">“Sinto que pareço sempre cansada, mesmo quando durmo bem.”</div>
+
+  <div class="two">
+    <div>
+      <h3>Achados da análise facial</h3>
+      <ul class="list">
+        <!-- REPETIR: um <li> por achado (3 a 5) -->
+        <li>Perda de sustentação no terço médio (região das bochechas)</li>
+        <li>Pele com baixa hidratação e pouco viço</li>
+        <li>Linhas de expressão dinâmicas na testa e entre as sobrancelhas</li>
+        <li>Início de flacidez no contorno da mandíbula</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Seus objetivos</h3>
+      <ul class="list">
+        <!-- REPETIR: um <li> por objetivo (2 a 4) -->
+        <li>Aspecto descansado e iluminado</li>
+        <li>Pele mais firme, com textura uniforme</li>
+        <li>Contorno do rosto mais definido</li>
+        <li>Resultado natural — sem parecer “feita”</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="muted" style="margin-top:26px;font-size:9.5pt">
+    A abordagem regenerativa trata a <strong>qualidade do tecido</strong> — colágeno, hidratação e oxigenação — antes dos ajustes finos.
+    Assim usamos menos produto e o resultado é mais natural e duradouro.
+  </p>
+
+  <div class="footer"><span>DRA. GABRIELA LIMA · [REGISTRO]</span><span>PLANO PERSONALIZADO</span></div>
+</section>
+
+<!-- ================= PÁGINA 3 — JORNADA ================= -->
+<section class="page">
+  <div class="eyebrow">02 · Sua jornada</div>
+  <h2>O tratamento em fases</h2>
+  <div class="rule"></div>
+
+  <div class="timeline">
+    <!-- REPETIR: um .phase por fase (3 ou 4) -->
+    <div class="phase">
+      <div class="dot">1</div>
+      <div class="when">Preparar · Mês 1</div>
+      <h3>Qualidade de pele</h3>
+      <div class="procs">Skinbooster + Ozonoterapia</div>
+      <div class="why">Primeiro cuidamos da base: hidratamos e oxigenamos a pele, preparando o tecido para responder melhor às próximas etapas.</div>
+    </div>
+    <div class="phase">
+      <div class="dot">2</div>
+      <div class="when">Regenerar · Meses 2 a 4</div>
+      <h3>Estímulo de colágeno</h3>
+      <div class="procs">Bioestimulador de colágeno · [Dra. define] sessões</div>
+      <div class="why">Seu rosto mostra perda de colágeno nas bochechas e mandíbula. O bioestimulador faz sua pele voltar a produzir colágeno, devolvendo firmeza de forma gradual.</div>
+    </div>
+    <div class="phase">
+      <div class="dot">3</div>
+      <div class="when">Refinar · Mês 5</div>
+      <h3>Ajustes finos</h3>
+      <div class="procs">Toxina botulínica · Ácido hialurônico pontual</div>
+      <div class="why">Com a base fortalecida, suavizamos as linhas de expressão e devolvemos estrutura apenas onde é necessário — sem excesso.</div>
+    </div>
+    <div class="phase">
+      <div class="dot">4</div>
+      <div class="when">Manter · A partir do mês 6</div>
+      <h3>Manutenção</h3>
+      <div class="procs">Toxina a cada 4–6 meses · Bioestímulo anual</div>
+      <div class="why">Preservamos o resultado com acompanhamento periódico, para que você envelheça bem e com naturalidade.</div>
+    </div>
+  </div>
+
+  <div class="quote-box" style="font-size:12.5pt;margin-top:10px">
+    <span class="eyebrow" style="font-family:Montserrat;font-style:normal;display:block;margin-bottom:6px">Por que essa ordem?</span>
+    Primeiro cuidamos da base — a pele. Depois estimulamos o seu próprio colágeno. Só então fazemos os ajustes finos.
+    Assim usamos menos produto e o resultado é mais natural e duradouro.
+  </div>
+
+  <div class="footer"><span>DRA. GABRIELA LIMA · [REGISTRO]</span><span>PLANO PERSONALIZADO</span></div>
+</section>
+
+<!-- ================= PÁGINA 4 — PROCEDIMENTOS + CRONOGRAMA ================= -->
+<section class="page">
+  <div class="eyebrow">03 · Procedimentos</div>
+  <h2>O que faremos e o que esperar</h2>
+  <div class="rule"></div>
+
+  <div class="cards">
+    <!-- REPETIR: um .card por procedimento -->
+    <div class="card">
+      <h3>Skinbooster</h3>
+      <div class="meta"><span>Face total</span><span>[Dra. define] sessões</span></div>
+      <p>Hidratação profunda de dentro para fora. Pele mais luminosa e macia. Pode haver pequenas pápulas por 24–48h.</p>
+    </div>
+    <div class="card">
+      <h3>Ozonoterapia</h3>
+      <div class="meta"><span>Complementar</span><span>[Dra. define]</span></div>
+      <p>Recurso complementar que melhora a oxigenação e a recuperação do tecido, potencializando o protocolo.</p>
+    </div>
+    <div class="card">
+      <h3>Bioestimulador de colágeno</h3>
+      <div class="meta"><span>Terço médio e mandíbula</span><span>[Dra. define]</span></div>
+      <p>Resultado progressivo em 60–90 dias. Firmeza e qualidade de pele com o seu próprio colágeno.</p>
+    </div>
+    <div class="card">
+      <h3>Toxina botulínica</h3>
+      <div class="meta"><span>Terço superior</span><span>1 sessão</span></div>
+      <p>Suaviza linhas de expressão mantendo sua expressão natural. Efeito em 3–7 dias; retorno em 15 dias.</p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:26px">Cronograma</h3>
+  <table>
+    <thead><tr><th>Período</th><th>Procedimento</th><th>Retorno</th></tr></thead>
+    <tbody>
+      <!-- REPETIR: uma <tr> por linha do cronograma -->
+      <tr><td>Mês 1</td><td>Skinbooster + Ozonoterapia</td><td>—</td></tr>
+      <tr><td>Mês 2</td><td>Bioestimulador · sessão 1</td><td>Fotos de evolução</td></tr>
+      <tr><td>Mês 3–4</td><td>Bioestimulador · sessões seguintes</td><td>Reavaliação</td></tr>
+      <tr><td>Mês 5</td><td>Toxina + Ácido hialurônico pontual</td><td>15 dias</td></tr>
+      <tr><td>Mês 6+</td><td>Manutenção</td><td>A cada 4–6 meses</td></tr>
+    </tbody>
+  </table>
+
+  <div class="footer"><span>DRA. GABRIELA LIMA · [REGISTRO]</span><span>PLANO PERSONALIZADO</span></div>
+</section>
+
+<!-- ================= PÁGINA 5 — CUIDADOS + INVESTIMENTO ================= -->
+<section class="page">
+  <div class="eyebrow">04 · Acompanhamento</div>
+  <h2>Cuidado do início ao fim</h2>
+  <div class="rule"></div>
+
+  <div class="two">
+    <div>
+      <h3>O que está incluso</h3>
+      <ul class="list">
+        <li>Análise facial e fotos padronizadas</li>
+        <li>Retornos de avaliação programados</li>
+        <li>Produtos com registro na ANVISA</li>
+        <li>Orientações de cuidados por escrito</li>
+        <li>Canal direto com a equipe pelo WhatsApp</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Seus cuidados em casa</h3>
+      <ul class="list">
+        <li>Protetor solar diário e reaplicação</li>
+        <li>Hidratação e home care indicado</li>
+        <li>Evitar calor intenso nas 48h após aplicações</li>
+        <li>Informar qualquer sintoma diferente à equipe</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- INVESTIMENTO: remover este bloco se a Dra. não informar valores -->
+  <div class="invest">
+    <div class="eyebrow">Investimento</div>
+    <div class="total">[valor total]</div>
+    <p>O plano pode ser realizado por fases, começando pelo que é prioridade para você. Formas de pagamento: [preencher].</p>
+  </div>
+
+  <p class="muted" style="font-size:8pt;margin-top:16px">Resultados variam de pessoa para pessoa. Este plano é individual e pode ser ajustado conforme a resposta do seu organismo em cada etapa.</p>
+
+  <div class="sign">
+    <div class="line"></div>
+    <div class="who">Dra. Gabriela Lima</div>
+    <div class="muted" style="font-size:8.5pt">[Registro profissional] · [WhatsApp] · [@instagram]</div>
+  </div>
+
+  <div class="footer"><span>DRA. GABRIELA LIMA · [REGISTRO]</span><span>PLANO PERSONALIZADO</span></div>
+</section>
+
+</body>
+</html>
