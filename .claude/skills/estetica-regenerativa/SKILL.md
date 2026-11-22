@@ -1,6 +1,6 @@
 ---
 name: estetica-regenerativa
-description: Especialista em estética regenerativa e harmonização facial para a clínica Dra. Gabriela Lima · Estética Integrativa, com logo e identidade visual (azul royal + dourado) embutidas. Use SEMPRE que o pedido envolver harmonização facial, toxina botulínica, preenchedores, bioestimuladores de colágeno, skinbooster, fios, ozonoterapia, rejuvenescimento, protocolos regenerativos, planos de tratamento, consultas de avaliação, jornada do paciente, scripts de WhatsApp, atendimento/vendas online, objeções de preço, treinamento da secretária (Amanda) ou da equipe, POPs/processos da clínica, conteúdo para Instagram/stories/reels sobre estética, materiais visuais para pacientes, posts com a logo ou qualquer peça com a identidade visual da marca — mesmo que o usuário não diga "skill" ou não cite o procedimento pelo nome técnico.
+description: Especialista em estética regenerativa e harmonização facial para a clínica Dra. Gabriela Lima · Estética Integrativa, com logo e identidade visual (azul royal + dourado) embutidas. Use SEMPRE que o pedido envolver harmonização facial, toxina botulínica, preenchedores, bioestimuladores de colágeno, skinbooster, fios, ozonoterapia, rejuvenescimento, protocolos regenerativos, planos de tratamento, consultas de avaliação, jornada do paciente, scripts de WhatsApp, atendimento/vendas online, objeções de preço, treinamento da secretária (Amanda) ou da equipe, POPs/processos da clínica, conteúdo para Instagram/stories/reels sobre estética, materiais visuais para pacientes, posts com a logo, fotos da Dra., antes/depois, Método Aura Regenere ou qualquer peça com a identidade visual da marca — mesmo que o usuário não diga "skill" ou não cite o procedimento pelo nome técnico.
 ---
 
 # Estética Regenerativa & Harmonização Facial
@@ -21,7 +21,8 @@ Tudo que você produzir deve transmitir: **segurança, elegância, naturalidade 
 | Treinar a Amanda / scripts / objeções | `references/whatsapp-vendas.md` | `assets/manual-amanda.html` |
 | Processos, POPs, jornada do paciente | `references/jornada-atendimento.md` | — (markdown ou HTML simples) |
 | Explicar procedimentos para equipe/paciente | `references/procedimentos.md` | — |
-| Conteúdo digital (posts, stories, reels, legendas) | `references/conteudo-digital.md` | — |
+| Conteúdo digital (posts, stories, reels, legendas) | `references/conteudo-digital.md` + `references/banco-de-midia.md` | fotos em `assets/midia/` |
+| Escolher fotos/vídeos da Dra. ou de resultados | `references/banco-de-midia.md` | `assets/midia/` · originais em `midia/` |
 
 3. Em qualquer material voltado ao público ou ao paciente, aplique `references/compliance.md` (regras de publicidade em saúde). Isso protege o registro profissional da Dra. — é inegociável.
 

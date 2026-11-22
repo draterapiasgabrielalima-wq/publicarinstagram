@@ -55,11 +55,12 @@ Todas disponíveis no Google Fonts (e no Canva).
 - Elegante, clássico, limpo: muito respiro, linhas finas douradas, molduras finas.
 - Alternar cards claros (off-white/creme) com cards azuis em degradê.
 - Flor de lótus como elemento gráfico recorrente (rodapé, separador, marca d'água a ~6% de opacidade).
-- Fotos: luz natural, tons quentes e limpos, Dra. de branco — combinam com o azul e dourado.
+- Fotos: ver `banco-de-midia.md`. O ensaio oficial tem fundos marrom/rosé e lilás com looks azul-marinho, preto com strass e vinho — combinam bem com o azul e o dourado da marca.
 - Evitar: rosa/nude dominante, neon, gradientes coloridos, emojis em excesso, fontes "fofas" ou script.
 
 ## Posicionamento
 - Frase-assinatura: **"Antes de qualquer agulha, existe planejamento."**
+- Método exclusivo: **AURA REGENERE** (protocolo autoral). Etapas e indicações: `[Dra. descreve]`. Assinatura visual usada: tarja preta inferior com "método exclusivo" em caixa baixa espaçada e "AURA REGENERE" em serifada clássica caixa alta, branca.
 - Pilares: análise facial individual · protocolo autoral · estética integrativa e regenerativa · ozonoterapia integrada · naturalidade.
 - Paciente ideal: quer parecer descansada e bem cuidada, tem medo de "ficar artificial", valoriza segurança e atenção.
 
