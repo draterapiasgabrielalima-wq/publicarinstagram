@@ -3,8 +3,8 @@
   --cream: #F3EEE0;
   --ink: #141A3C;
   --muted: #555A75;
-  --navy: #001288;
-  --navy-deep: #000E57;
+  --navy: #1C2D52;
+  --navy-deep: #0F1D3A;
   --gold: #A08B31;
   --gold-ink: #7A661C;
   --gold-light: #D4C694;
@@ -24,7 +24,7 @@ section {
 }
 section.cream { background: var(--cream); }
 section.dark {
-  background: linear-gradient(135deg, #000E57 0%, #001288 52%, #000E5E 100%);
+  background: linear-gradient(135deg, #0F1D3A 0%, #172848 52%, #0B1631 100%);
   color: #FFFFFF;
 }
 

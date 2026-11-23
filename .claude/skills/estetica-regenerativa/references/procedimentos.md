@@ -67,6 +67,7 @@ Cada procedimento tem três camadas: **o que é (técnico)**, **como explicar pa
 - **Preenchimento estrutural:** ácido hialurônico em pontos de sustentação para reposicionar tecidos perdidos com o envelhecimento.
 - **Preenchimento labial:** devolver projeção com elegância e naturalidade — nunca "volume".
 - **Suplementação ortomolecular:** nutrição de dentro para fora; prescrição conforme habilitação profissional.
+- **i-PRF — banco de colágeno:** fibrina rica em plaquetas obtida do sangue da própria paciente, aplicada na pele para estimular colágeno. Paciente: "Seu próprio organismo ajudando a formar uma reserva de colágeno." Regras de uso dependem do conselho profissional.
 - **Protocolo Revive** e **técnica da Dra. Valéria Dalcol:** `[Dra. descreve]`.
 
 ## 10. Conceitos

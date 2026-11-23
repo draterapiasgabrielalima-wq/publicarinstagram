@@ -45,7 +45,7 @@ Fotos e vídeos oficiais para criar conteúdo. **Antes de escolher uma imagem, l
 | `ref-externa-story-caixinha-fios` | Story de **outra profissional/clínica**: fundo preto, título serifado grande, 3 fotos de perfil em sequência e caixinha de perguntas sobre fios. | Apenas como referência de **formato**: título forte + evolução em sequência + caixinha. Recriar com a identidade e as fotos da Dra. Não copiar textos, fotos ou nomes. |
 
 ## Regras gerais de uso
-1. Fotos da Dra. sempre com a identidade da marca (azul royal, dourado, logo ou lótus) — ver `marca.md`.
+1. Fotos da Dra. sempre com a identidade da marca (azul-marinho, dourado, logo ou lótus) — ver `marca.md`.
 2. Foto de paciente = termo de autorização assinado + finalidade educativa + aviso de que resultados variam.
 3. Não editar o rosto de pacientes (filtro, suavização) em antes/depois.
 4. Ao montar uma peça, indique no final quais arquivos do banco foram usados.

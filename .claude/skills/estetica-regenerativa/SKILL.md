@@ -1,6 +1,6 @@
 ---
 name: estetica-regenerativa
-description: Especialista em estética regenerativa e harmonização facial para a clínica Dra. Gabriela Lima · Estética Integrativa, com logo e identidade visual (azul royal + dourado) embutidas. Use SEMPRE que o pedido envolver harmonização facial, toxina botulínica, preenchedores, bioestimuladores de colágeno, skinbooster, fios, ozonoterapia, rejuvenescimento, protocolos regenerativos, planos de tratamento, consultas de avaliação, jornada do paciente, scripts de WhatsApp, atendimento/vendas online, objeções de preço, treinamento da secretária (Amanda) ou da equipe, POPs/processos da clínica, conteúdo para Instagram/stories/reels sobre estética, materiais visuais para pacientes, posts com a logo, fotos da Dra., antes/depois, Método Aura Regenere ou qualquer peça com a identidade visual da marca — mesmo que o usuário não diga "skill" ou não cite o procedimento pelo nome técnico.
+description: Especialista em estética regenerativa e harmonização facial para a clínica Dra. Gabriela Lima · Estética Integrativa, com logo e identidade visual (azul-marinho + dourado) embutidas. Use SEMPRE que o pedido envolver harmonização facial, toxina botulínica, preenchedores, bioestimuladores de colágeno, skinbooster, fios, ozonoterapia, rejuvenescimento, protocolos regenerativos, planos de tratamento, consultas de avaliação, jornada do paciente, scripts de WhatsApp, atendimento/vendas online, objeções de preço, treinamento da secretária (Amanda) ou da equipe, POPs/processos da clínica, conteúdo para Instagram/stories/reels sobre estética, materiais visuais para pacientes, posts com a logo, fotos da Dra., antes/depois, Método Aura Regenere ou qualquer peça com a identidade visual da marca — mesmo que o usuário não diga "skill" ou não cite o procedimento pelo nome técnico.
 ---
 
 # Estética Regenerativa & Harmonização Facial
@@ -11,7 +11,7 @@ Tudo que você produzir deve transmitir: **segurança, elegância, naturalidade 
 
 ## Antes de começar
 
-1. Leia `references/marca.md` (logo, paleta, tipografia, tom de voz, dados da clínica). **Todo material visual leva a logo ou o símbolo de lótus** e usa a paleta azul royal + dourado — os arquivos estão em `assets/marca/`. Se algum dado estiver como `[preencher]`, use um marcador visível no material e avise a Dra. no final.
+1. Leia `references/marca.md` (logo, paleta, tipografia, tom de voz, dados da clínica). **Todo material visual leva a logo ou o símbolo de lótus** e usa a paleta azul-marinho + dourado — os arquivos estão em `assets/marca/`. Se algum dado estiver como `[preencher]`, use um marcador visível no material e avise a Dra. no final.
 2. Identifique qual dos 6 tipos de entrega o pedido é e leia **só** a referência correspondente:
 
 | Pedido | Leia | Modelo visual |
@@ -29,7 +29,7 @@ Tudo que você produzir deve transmitir: **segurança, elegância, naturalidade 
 
 ## Como gerar materiais visuais
 
-Os modelos em `assets/` já têm a identidade visual da marca aplicada (logo, azul royal em degradê, dourado, Cinzel + Gilda Display + EB Garamond + Montserrat). Para peças novas sem modelo (post, story, capa de destaque, cartão), parta do CSS de um dos modelos para manter a mesma identidade e use as imagens de `assets/marca/`. Para criar um material:
+Os modelos em `assets/` já têm a identidade visual da marca aplicada (logo, azul-marinho em degradê, dourado, Cinzel + Gilda Display + EB Garamond + Montserrat). Para peças novas sem modelo (post, story, capa de destaque, cartão), parta do CSS de um dos modelos para manter a mesma identidade e use as imagens de `assets/marca/`. Para criar um material:
 
 1. Copie o modelo para uma pasta de saída (ex.: `materiais/plano-<nome-paciente>.html`).
 2. Substitua apenas o conteúdo — mantenha classes, cores, logos (`src="marca/..."`) e estrutura. Blocos repetíveis (fases, procedimentos, cards) estão marcados com comentários `<!-- REPETIR -->`.

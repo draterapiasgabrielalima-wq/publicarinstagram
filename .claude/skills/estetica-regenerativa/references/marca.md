@@ -16,10 +16,10 @@
 | Arquivo | Quando usar |
 |---|---|
 | `logo-dourado.png` | **Versão principal.** Fundos claros (off-white, creme, branco). Fundo transparente. |
-| `logo-branco.png` | Fundos azuis ou fotos escuras. Transparente. |
-| `logo-azul.png` | Fundos claros quando o dourado tiver pouco contraste; assinaturas de documentos. |
+| `logo-branco.png` | Fundos azul-marinho ou fotos escuras. Transparente. |
+| `logo-azul.png` | Em azul-marinho. Fundos claros quando o dourado tiver pouco contraste; assinaturas de documentos. |
 | `logo-preto.png` | Impressão P&B, carimbos, documentos simples. |
-| `logo-fundo-azul.jpg` | Peça pronta (logo dourada sobre azul) — capa de destaque, tela de vídeo, foto de perfil. |
+| `logo-fundo-azul.jpg` | Arquivo antigo com fundo azul royal — **não usar** como cor da marca. Para logo sobre fundo escuro, use `logo-dourado.png` sobre o degradê azul-marinho. |
 | `simbolo-lotus-dourado/branco/azul.png` | Só a flor de lótus: ícones, rodapés, marca d'água, avatar, separadores. |
 | `midia/marca-originais/` (repositório) | Arquivos originais enviados pela Dra. — nunca alterar. |
 
@@ -29,19 +29,23 @@ Regras da logo:
 - Tamanho mínimo: 140px de largura em tela (abaixo disso, use só o símbolo de lótus).
 - Em HTML, referencie como `src="marca/<arquivo>"` — o script de exportação copia a pasta `marca/` para junto do HTML automaticamente.
 
-## Paleta (extraída da logo)
+## Paleta — azul-marinho elegante + dourado
+A cor institucional é o **azul-marinho** (profundo e sóbrio). **Não usar azul royal / azul vivo** — a Dra. pediu explicitamente um azul mais elegante.
+
 | Cor | HEX | Uso |
 |---|---|---|
-| Azul royal profundo | `#000E57` | Cor institucional, títulos, fundos escuros |
-| Azul royal | `#001288` | Centro do degradê, destaques |
-| Degradê da marca | `linear-gradient(135deg,#000E57,#001288 50%,#000E5E)` | Cards e capas escuras (como o fundo da logo) |
+| Azul-marinho profundo | `#0F1D3A` | Cor institucional, títulos, fundos escuros |
+| Azul-marinho médio | `#172848` | Centro do degradê |
+| Azul-marinho apoio | `#1C2D52` | Detalhes, ícones |
+| Degradê da marca | `linear-gradient(135deg,#0F1D3A 0%,#172848 52%,#0B1631 100%)` | Cards, capas e slides escuros |
 | Dourado | `#A08B31` | Logo, linhas finas, números, palavras em destaque |
-| Dourado claro | `#CDBF8A` | Dourado sobre azul (melhor leitura) |
+| Dourado escuro (texto pequeno em fundo claro) | `#7A661C` | Sobretítulos e legendas em fundo claro |
+| Dourado claro | `#D4C694` | Dourado sobre azul-marinho (melhor leitura) |
 | Off-white | `#FBF9F4` | Fundo claro principal |
 | Creme | `#F3EEE0` | Fundo de apoio, caixas |
-| Texto | `#141A3C` (azul-tinta) · secundário `#5F6480` | Corpo de texto |
+| Texto | `#141A3C` · secundário `#555A75` | Corpo de texto |
 
-Proporção recomendada: 60% fundo claro · 25% azul · 15% dourado. Dourado é acento — nunca blocos grandes de dourado chapado.
+Proporção recomendada: 60% fundo claro · 25% azul-marinho · 15% dourado. Dourado é acento — nunca blocos grandes de dourado chapado.
 
 ## Tipografia
 - **Cinzel** — rótulos, sobretítulos e chamadas curtas em caixa alta espaçada (mesma família visual da logo, estilo Trajan).
