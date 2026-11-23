@@ -24,6 +24,9 @@ catch { console.error('Playwright não encontrado. Abra o HTML no navegador e us
   const marcaSkill = path.join(__dirname, '..', 'assets', 'marca');
   const marcaLocal = path.join(path.dirname(src), 'marca');
   if (!fs.existsSync(marcaLocal) && fs.existsSync(marcaSkill)) fs.cpSync(marcaSkill, marcaLocal, { recursive: true });
+  const fotosSkill = path.join(__dirname, '..', 'assets', 'fotos');
+  const fotosLocal = path.join(path.dirname(src), 'fotos');
+  if (!fs.existsSync(fotosLocal) && fs.existsSync(fotosSkill)) fs.cpSync(fotosSkill, fotosLocal, { recursive: true });
   const browser = await chromium.launch();
   const page = await browser.newPage({ viewport: { width: 900, height: 1200 }, deviceScaleFactor: 2 });
   await page.goto(pathToFileURL(src).href, { waitUntil: 'networkidle' });

@@ -3,6 +3,7 @@
 Fotos e vídeos oficiais para criar conteúdo. **Antes de escolher uma imagem, leia a coluna "Cuidados"** — ela diz o que pode ou não ser publicado.
 
 - Arquivos: pasta `midia/` na raiz do repositório (`midia/dra`, `midia/resultados`, `midia/videos`, `midia/referencias`). As fotos ficam fora da skill para ela continuar leve.
+- Três fotos leves já vêm dentro da skill para posts: `assets/fotos/dra-retrato.jpg` (terno azul, lapela), `assets/fotos/dra-ipad.jpg` (vinho, iPad, pensativa) e `assets/fotos/dra-ponteiras.jpg` (ponteiras de equipamento).
 - Se a pasta `midia/` não estiver disponível (ex.: skill usada no app sem o repositório), peça à Dra. para anexar a foto escolhida na conversa, citando o nome do arquivo deste catálogo.
 - Em HTML, copie a imagem para junto do arquivo (ex.: `materiais/midia/`) ou use o caminho relativo correto. Confira no PNG final que a foto carregou.
 

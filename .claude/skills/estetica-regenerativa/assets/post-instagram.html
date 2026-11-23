@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Post Instagram</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  /* MODELO DE POST / CARROSSEL — cada .wa-card vira um PNG 1080x1350 (4:5, formato do feed).
+     Tipos de card: .capa (foto + título), .claro, .escuro (azul-marinho), .cta (fechamento).
+     Duplique ou remova cards conforme o conteúdo (carrossel ideal: 5 a 8 cards). */
+  :root{--bg:#FBF9F4;--cream:#F3EEE0;--ink:#141A3C;--muted:#555A75;--navy:#1C2D52;--navy-deep:#0F1D3A;
+    --gold:#A08B31;--gold-ink:#7A661C;--gold-light:#D4C694;--line:#E2D9BC;
+    --navy-grad:linear-gradient(135deg,#0F1D3A 0%,#172848 52%,#0B1631 100%);}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#e6e3dd;font-family:Montserrat,sans-serif;font-weight:300;color:var(--ink);padding:24px 16px;display:flex;flex-direction:column;align-items:center;gap:24px}
+  .wa-card{width:540px;height:675px;max-width:100%;position:relative;overflow:hidden;padding:54px 46px;display:flex;flex-direction:column;background:var(--bg)}
+  .claro{background:linear-gradient(170deg,var(--bg) 0%,var(--cream) 100%)}
+  .escuro,.cta{background:var(--navy-grad);color:#fff}
+  .frame{position:absolute;inset:18px;border:1px solid var(--line);pointer-events:none;z-index:3}
+  .escuro .frame,.cta .frame,.capa .frame{border-color:rgba(212,198,148,.45)}
+  .eyebrow{font-family:Cinzel,serif;font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-ink);font-weight:500;margin-bottom:16px}
+  .escuro .eyebrow,.cta .eyebrow,.capa .eyebrow{color:var(--gold-light)}
+  h1,h2{font-family:"EB Garamond",serif;font-weight:500;line-height:1.05;color:var(--navy-deep)}
+  h1{font-size:54px} h2{font-size:40px}
+  .escuro h1,.escuro h2,.cta h1,.cta h2,.capa h1{color:#fff}
+  em{font-style:italic;color:var(--gold)}
+  .escuro em,.cta em,.capa em{color:var(--gold-light)}
+  .rule{width:44px;height:1px;background:var(--gold);margin:22px 0}
+  .escuro .rule,.cta .rule,.capa .rule{background:var(--gold-light)}
+  p{font-size:16px;line-height:1.6;color:var(--muted)}
+  .escuro p,.cta p,.capa p{color:#DDE0EE}
+  .sig{margin-top:auto;display:flex;justify-content:space-between;align-items:center;font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);position:relative;z-index:2}
+  .escuro .sig,.cta .sig,.capa .sig{color:#C9CDE2}
+  .sig img{height:16px;vertical-align:middle;margin-right:8px}
+  .count{font-family:"EB Garamond",serif;font-size:14px;color:var(--gold);letter-spacing:.1em}
+  .escuro .count,.cta .count,.capa .count{color:var(--gold-light)}
+  /* capa com foto */
+  .capa{padding:0;justify-content:flex-end;background:var(--navy-deep)}
+  .capa .foto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%}
+  .capa .veu{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,29,58,0) 30%,rgba(15,29,58,.78) 62%,rgba(11,22,49,.97) 100%)}
+  .capa .conteudo{position:relative;z-index:2;padding:0 46px 54px;display:flex;flex-direction:column}
+  /* listas */
+  .lista{list-style:none;margin-top:6px}
+  .lista li{display:flex;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
+  .escuro .lista li{border-color:rgba(212,198,148,.3)}
+  .lista .n{font-family:"EB Garamond",serif;font-size:24px;color:var(--gold);min-width:24px;line-height:1.1}
+  .escuro .lista .n{color:var(--gold-light)}
+  .lista b{display:block;font-weight:500;font-size:16px;color:var(--navy-deep)}
+  .escuro .lista b{color:#fff}
+  .lista span{font-size:13.5px;color:var(--muted);line-height:1.45}
+  .escuro .lista span{color:#C9CDE2}
+  .destaque{font-family:"EB Garamond",serif;font-style:italic;font-size:24px;line-height:1.35;color:var(--navy-deep)}
+  .cta{justify-content:center;text-align:center;align-items:center}
+  .cta .rule{margin:22px auto}
+  .botao{margin-top:24px;border:1px solid var(--gold-light);padding:14px 22px;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-light)}
+  .aviso{font-size:10.5px!important;line-height:1.4;opacity:.85;margin-top:14px}
+</style>
+</head>
+<body>
+
+<!-- CARD 1 — CAPA (foto da Dra. + título forte). Trocar src por outra foto de fotos/ se fizer sentido. -->
+<section class="wa-card capa">
+  <img class="foto" src="fotos/dra-retrato.jpg" alt="Dra. Gabriela Lima">
+  <div class="veu"></div>
+  <div class="frame"></div>
+  <div class="conteudo">
+    <div class="eyebrow">Método exclusivo</div>
+    <h1>Aura <em>Regenere</em></h1>
+    <div class="rule"></div>
+    <p>A pele tratada em etapas — da base ao refinamento. Arraste para entender →</p>
+    <div class="sig" style="margin-top:26px"><span><img src="marca/simbolo-lotus-dourado.png" alt="">Dra. Gabriela Lima</span><span class="count">01/06</span></div>
+  </div>
+</section>
+
+<!-- CARD 2 — CLARO (ideia principal) -->
+<section class="wa-card claro">
+  <div class="frame"></div>
+  <div class="eyebrow">O que é</div>
+  <h2>Tratar a causa, <em>não só o sintoma</em></h2>
+  <div class="rule"></div>
+  <p>O Aura Regenere é o meu protocolo autoral de estética integrativa e regenerativa. Primeiro preparamos e nutrimos a pele, depois estimulamos o seu próprio colágeno, devolvemos sustentação e só então fazemos os ajustes finos.</p>
+  <p class="destaque" style="margin-top:22px">“Antes de qualquer agulha, existe planejamento.”</p>
+  <div class="sig"><span><img src="marca/simbolo-lotus-dourado.png" alt="">Dra. Gabriela Lima</span><span class="count">02/06</span></div>
+</section>
+
+<!-- CARD 3 — ESCURO (lista numerada) -->
+<section class="wa-card escuro">
+  <div class="frame"></div>
+  <div class="eyebrow">As etapas</div>
+  <h2>Como o método <em>acontece</em></h2>
+  <ul class="lista" style="margin-top:18px">
+    <li><span class="n">I</span><div><b>Preparar a pele</b><span>Preparação, peeling coreano e suplementação.</span></div></li>
+    <li><span class="n">II</span><div><b>Regenerar</b><span>Microagulhamento, skinbooster, bioestimulador e i-PRF.</span></div></li>
+    <li><span class="n">III</span><div><b>Reposicionar e sustentar</b><span>Ultrassom microfocado, fios e preenchimento estrutural.</span></div></li>
+    <li><span class="n">IV</span><div><b>Refinar</b><span>Lábios com projeção, elegância e naturalidade.</span></div></li>
+  </ul>
+  <div class="sig"><span><img src="marca/simbolo-lotus-dourado.png" alt="">Dra. Gabriela Lima</span><span class="count">03/06</span></div>
+</section>
+
+<!-- CARD 4 — CLARO (destaque de um recurso) -->
+<section class="wa-card claro">
+  <div class="frame"></div>
+  <div class="eyebrow">Medicina regenerativa</div>
+  <h2>Seu banco de <em>colágeno</em></h2>
+  <div class="rule"></div>
+  <p>Com a técnica de i-PRF, usamos o seu próprio sangue para estimular a pele a formar uma reserva de colágeno — de forma natural e regenerativa.</p>
+  <ul class="lista" style="margin-top:14px">
+    <li><span class="n">1</span><div><b>Coleta</b><span>Pequena coleta, como em um exame.</span></div></li>
+    <li><span class="n">2</span><div><b>Preparo</b><span>Separação da fibrina rica em plaquetas.</span></div></li>
+    <li><span class="n">3</span><div><b>Aplicação</b><span>Estímulo de colágeno e firmeza.</span></div></li>
+  </ul>
+  <div class="sig"><span><img src="marca/simbolo-lotus-dourado.png" alt="">Dra. Gabriela Lima</span><span class="count">04/06</span></div>
+</section>
+
+<!-- CARD 5 — ESCURO (frase de impacto) -->
+<section class="wa-card escuro" style="justify-content:center">
+  <div class="frame"></div>
+  <div class="eyebrow">Naturalidade</div>
+  <h1 style="font-size:46px">Ninguém percebe o que você fez. <em>Só que você está bem.</em></h1>
+  <div class="rule"></div>
+  <p>Cada etapa é indicada na avaliação. Você faz só o que o seu rosto precisa.</p>
+  <div class="sig" style="position:absolute;left:46px;right:46px;bottom:54px"><span><img src="marca/simbolo-lotus-dourado.png" alt="">Dra. Gabriela Lima</span><span class="count">05/06</span></div>
+</section>
+
+<!-- CARD 6 — CTA (sempre o último) -->
+<section class="wa-card cta">
+  <div class="frame"></div>
+  <img src="marca/logo-dourado.png" alt="Dra. Gabriela Lima — Estética Integrativa" style="width:300px;margin-bottom:34px">
+  <div class="eyebrow">Próximo passo</div>
+  <h2>Quer saber o que faz sentido <em>para o seu rosto?</em></h2>
+  <div class="rule"></div>
+  <div class="botao">Agende sua avaliação</div>
+  <p class="aviso">Resultados variam de pessoa para pessoa. Procedimentos indicados após avaliação individual.<br>Dra. Gabriela Lima · [registro profissional]</p>
+  <div class="sig" style="position:absolute;left:46px;right:46px;bottom:44px"><span>[@instagram]</span><span class="count">06/06</span></div>
+</section>
+
+</body>
+</html>

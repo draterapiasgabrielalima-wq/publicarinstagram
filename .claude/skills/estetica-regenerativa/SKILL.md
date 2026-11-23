@@ -12,7 +12,7 @@ Tudo que você produzir deve transmitir: **segurança, elegância, naturalidade 
 ## Antes de começar
 
 1. Leia `references/marca.md` (logo, paleta, tipografia, tom de voz, dados da clínica). **Todo material visual leva a logo ou o símbolo de lótus** e usa a paleta azul-marinho + dourado — os arquivos estão em `assets/marca/`. Se algum dado estiver como `[preencher]`, use um marcador visível no material e avise a Dra. no final.
-2. Identifique qual dos 6 tipos de entrega o pedido é e leia **só** a referência correspondente:
+2. Identifique o tipo de entrega e leia **só** a referência correspondente:
 
 | Pedido | Leia | Modelo visual |
 |---|---|---|
@@ -21,15 +21,26 @@ Tudo que você produzir deve transmitir: **segurança, elegância, naturalidade 
 | Treinar a Amanda / scripts / objeções | `references/whatsapp-vendas.md` | `assets/manual-amanda.html` |
 | Processos, POPs, jornada do paciente | `references/jornada-atendimento.md` | — (markdown ou HTML simples) |
 | Explicar procedimentos para equipe/paciente | `references/procedimentos.md` | — |
-| Conteúdo digital (posts, stories, reels, legendas) | `references/conteudo-digital.md` + `references/banco-de-midia.md` | fotos em `midia/` (repositório) |
+| **Post ou carrossel para Instagram** (qualquer tema, inclusive Aura Regenere) | `references/conteudo-digital.md` (+ `references/aura-regenere.md` se o tema for o método) | **`assets/post-instagram.html`** + fotos em `assets/fotos/` |
+| Stories, roteiro de reels, legendas, calendário | `references/conteudo-digital.md` + `references/banco-de-midia.md` | `assets/post-instagram.html` para telas de story |
 | Método Aura Regenere (etapas, recursos, como explicar) | `references/aura-regenere.md` | — |
 | Escolher fotos/vídeos da Dra. ou de resultados | `references/banco-de-midia.md` | `midia/` (repositório) |
 
 3. Em qualquer material voltado ao público ou ao paciente, aplique `references/compliance.md` (regras de publicidade em saúde). Isso protege o registro profissional da Dra. — é inegociável.
 
+## Pedido de post = entregar a ARTE pronta
+
+Quando a Dra. pedir um post, carrossel ou "conteúdo sobre X", **a entrega é a peça visual pronta** (as imagens dos cards), não só ideias ou texto. Faça nesta ordem, sem pedir confirmação antes — ela prefere ver a peça e depois ajustar:
+1. Escreva o conteúdo (5 a 8 cards: capa com gancho → explicação → detalhes → frase de impacto → CTA), aplicando `compliance.md`.
+2. Monte os cards a partir de `assets/post-instagram.html` (capa com foto da Dra. de `assets/fotos/`, alternando cards claros e azul-marinho, último card sempre CTA com aviso "resultados variam").
+3. Gere os PNGs com o script (abaixo) e mostre as imagens.
+4. Entregue também a **legenda** pronta (gancho, 3–5 linhas, CTA, nome + registro) e 5–10 hashtags.
+
+**Se não for possível rodar o script** (por exemplo, no app do Claude sem Node/Playwright): crie a peça mesmo assim como **página HTML/artifact visível** a partir do modelo — com os cards já renderizados na tela — e diga à Dra. que ela pode fazer captura de tela de cada card ou pedir a exportação em PNG numa sessão do Claude Code. Nunca responda apenas com sugestões de texto quando a Dra. pediu um post.
+
 ## Como gerar materiais visuais
 
-Os modelos em `assets/` já têm a identidade visual da marca aplicada (logo, azul-marinho em degradê, dourado, Cinzel + Gilda Display + EB Garamond + Montserrat). Para peças novas sem modelo (post, story, capa de destaque, cartão), parta do CSS de um dos modelos para manter a mesma identidade e use as imagens de `assets/marca/`. Para criar um material:
+Os modelos em `assets/` já têm a identidade visual da marca aplicada (logo, azul-marinho em degradê, dourado, Cinzel + EB Garamond + Montserrat). Para peças novas sem modelo (story, capa de destaque, cartão), parta do CSS de `post-instagram.html` para manter a mesma identidade e use as imagens de `assets/marca/`. Para criar um material:
 
 1. Copie o modelo para uma pasta de saída (ex.: `materiais/plano-<nome-paciente>.html`).
 2. Substitua apenas o conteúdo — mantenha classes, cores, logos (`src="marca/..."`) e estrutura. Blocos repetíveis (fases, procedimentos, cards) estão marcados com comentários `<!-- REPETIR -->`.
@@ -37,8 +48,9 @@ Os modelos em `assets/` já têm a identidade visual da marca aplicada (logo, az
    ```bash
    node .claude/skills/estetica-regenerativa/scripts/exportar.cjs materiais/plano-maria.html --pdf
    node .claude/skills/estetica-regenerativa/scripts/exportar.cjs materiais/boas-vindas.html --png   # um PNG por card, pronto para o WhatsApp
+   node .claude/skills/estetica-regenerativa/scripts/exportar.cjs materiais/posts/aura.html --png    # um PNG 1080x1350 por card do carrossel
    ```
-   O script usa Node + Playwright (Chromium) e copia a pasta `marca/` (logos) para junto do HTML automaticamente. Se for entregar só o HTML, copie também `assets/marca/` para a mesma pasta. Se não houver Node/Playwright, entregue o HTML e explique que basta abrir no navegador e "Imprimir → Salvar como PDF".
+   O script usa Node + Playwright (Chromium) e copia as pastas `marca/` (logos) e `fotos/` para junto do HTML automaticamente. Se for entregar só o HTML, copie também `assets/marca/` e `assets/fotos/` para a mesma pasta. Se não houver Node/Playwright, entregue o HTML e explique que basta abrir no navegador e "Imprimir → Salvar como PDF".
 4. Olhe o resultado (leia o PNG gerado) antes de entregar: logo ausente (imagem quebrada), texto cortado, card vazio ou marcador `[preencher]` esquecido são os erros mais comuns.
 
 ## Princípios clínicos que guiam tudo
