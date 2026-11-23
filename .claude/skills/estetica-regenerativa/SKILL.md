@@ -21,8 +21,8 @@ Tudo que você produzir deve transmitir: **segurança, elegância, naturalidade 
 | Treinar a Amanda / scripts / objeções | `references/whatsapp-vendas.md` | `assets/manual-amanda.html` |
 | Processos, POPs, jornada do paciente | `references/jornada-atendimento.md` | — (markdown ou HTML simples) |
 | Explicar procedimentos para equipe/paciente | `references/procedimentos.md` | — |
-| Conteúdo digital (posts, stories, reels, legendas) | `references/conteudo-digital.md` + `references/banco-de-midia.md` | fotos em `assets/midia/` |
-| Escolher fotos/vídeos da Dra. ou de resultados | `references/banco-de-midia.md` | `assets/midia/` · originais em `midia/` |
+| Conteúdo digital (posts, stories, reels, legendas) | `references/conteudo-digital.md` + `references/banco-de-midia.md` | fotos em `midia/` (repositório) |
+| Escolher fotos/vídeos da Dra. ou de resultados | `references/banco-de-midia.md` | `midia/` (repositório) |
 
 3. Em qualquer material voltado ao público ou ao paciente, aplique `references/compliance.md` (regras de publicidade em saúde). Isso protege o registro profissional da Dra. — é inegociável.
 

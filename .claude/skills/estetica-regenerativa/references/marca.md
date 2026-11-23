@@ -21,7 +21,7 @@
 | `logo-preto.png` | Impressão P&B, carimbos, documentos simples. |
 | `logo-fundo-azul.jpg` | Peça pronta (logo dourada sobre azul) — capa de destaque, tela de vídeo, foto de perfil. |
 | `simbolo-lotus-dourado/branco/azul.png` | Só a flor de lótus: ícones, rodapés, marca d'água, avatar, separadores. |
-| `originais/` | Arquivos originais enviados pela Dra. — nunca alterar. |
+| `midia/marca-originais/` (repositório) | Arquivos originais enviados pela Dra. — nunca alterar. |
 
 Regras da logo:
 - Nunca distorcer, girar, recolorir fora da paleta, aplicar sombra ou contorno.

@@ -2,8 +2,8 @@
 
 Fotos e vídeos oficiais para criar conteúdo. **Antes de escolher uma imagem, leia a coluna "Cuidados"** — ela diz o que pode ou não ser publicado.
 
-- Versões leves (até 1350px) para usar nas peças: `assets/midia/<arquivo>.jpg` (dentro da skill).
-- Originais em alta e vídeos: pasta `midia/` na raiz do repositório (`midia/dra`, `midia/resultados`, `midia/videos`, `midia/referencias`).
+- Arquivos: pasta `midia/` na raiz do repositório (`midia/dra`, `midia/resultados`, `midia/videos`, `midia/referencias`). As fotos ficam fora da skill para ela continuar leve.
+- Se a pasta `midia/` não estiver disponível (ex.: skill usada no app sem o repositório), peça à Dra. para anexar a foto escolhida na conversa, citando o nome do arquivo deste catálogo.
 - Em HTML, copie a imagem para junto do arquivo (ex.: `materiais/midia/`) ou use o caminho relativo correto. Confira no PNG final que a foto carregou.
 
 ## Fotos da Dra. (ensaio em estúdio) — uso livre na comunicação da marca
