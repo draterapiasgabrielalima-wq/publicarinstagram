@@ -60,7 +60,7 @@ Todas disponíveis no Google Fonts (e no Canva).
 
 ## Posicionamento
 - Frase-assinatura: **"Antes de qualquer agulha, existe planejamento."**
-- Método exclusivo: **AURA REGENERE** (protocolo autoral). Etapas e indicações: `[Dra. descreve]`. Assinatura visual usada: tarja preta inferior com "método exclusivo" em caixa baixa espaçada e "AURA REGENERE" em serifada clássica caixa alta, branca.
+- Método exclusivo: **AURA REGENERE** (protocolo autoral). Detalhes em `references/aura-regenere.md`. Assinatura visual usada: tarja preta inferior com "método exclusivo" em caixa baixa espaçada e "AURA REGENERE" em serifada clássica caixa alta, branca.
 - Pilares: análise facial individual · protocolo autoral · estética integrativa e regenerativa · ozonoterapia integrada · naturalidade.
 - Paciente ideal: quer parecer descansada e bem cuidada, tem medo de "ficar artificial", valoriza segurança e atenção.
 

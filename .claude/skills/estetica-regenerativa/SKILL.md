@@ -22,6 +22,7 @@ Tudo que você produzir deve transmitir: **segurança, elegância, naturalidade 
 | Processos, POPs, jornada do paciente | `references/jornada-atendimento.md` | — (markdown ou HTML simples) |
 | Explicar procedimentos para equipe/paciente | `references/procedimentos.md` | — |
 | Conteúdo digital (posts, stories, reels, legendas) | `references/conteudo-digital.md` + `references/banco-de-midia.md` | fotos em `midia/` (repositório) |
+| Método Aura Regenere (etapas, recursos, como explicar) | `references/aura-regenere.md` | — |
 | Escolher fotos/vídeos da Dra. ou de resultados | `references/banco-de-midia.md` | `midia/` (repositório) |
 
 3. Em qualquer material voltado ao público ou ao paciente, aplique `references/compliance.md` (regras de publicidade em saúde). Isso protege o registro profissional da Dra. — é inegociável.

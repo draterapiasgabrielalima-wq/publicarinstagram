@@ -59,6 +59,16 @@ Cada procedimento tem três camadas: **o que é (técnico)**, **como explicar pa
 - **Técnico:** aplicação para redução de gordura submentoniana; múltiplas sessões; edema esperado.
 - **Para o paciente:** "Reduz a gordurinha da papada, valorizando o contorno do rosto."
 
+## 9b. Outros recursos do Método Aura Regenere
+- **Peeling coreano (Pinkless):** renovação suave do tecido e preparação da pele. Paciente: "Renova a pele com delicadeza, preparando para as próximas etapas."
+- **Microagulhamento com peptídeos:** microagulhamento associado a peptídeos regeneradores. Paciente: "Leva ativos regeneradores exatamente onde a pele precisa."
+- **Ultrassom microfocado:** energia focada em camadas profundas para estímulo e reposicionamento de tecido. Paciente: "Tecnologia que trabalha a sustentação de dentro para fora, sem cortes."
+- **Fios para a área dos olhos:** sustentação delicada da região periocular. Paciente: "Um olhar mais descansado."
+- **Preenchimento estrutural:** ácido hialurônico em pontos de sustentação para reposicionar tecidos perdidos com o envelhecimento.
+- **Preenchimento labial:** devolver projeção com elegância e naturalidade — nunca "volume".
+- **Suplementação ortomolecular:** nutrição de dentro para fora; prescrição conforme habilitação profissional.
+- **Protocolo Revive** e **técnica da Dra. Valéria Dalcol:** `[Dra. descreve]`.
+
 ## 10. Conceitos
 - **Estética regenerativa:** tratar a qualidade e a biologia do tecido (colágeno, hidratação, oxigenação) para que o rosto envelheça melhor — não apenas camuflar.
 - **Harmonização natural:** equilibrar proporções respeitando a identidade do paciente. "Ninguém deve perceber o que você fez — só que você está bem."
