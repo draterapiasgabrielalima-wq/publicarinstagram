@@ -19,7 +19,6 @@
 | `logo-branco.png` | Fundos azul-marinho ou fotos escuras. Transparente. |
 | `logo-azul.png` | Em azul-marinho. Fundos claros quando o dourado tiver pouco contraste; assinaturas de documentos. |
 | `logo-preto.png` | Impressão P&B, carimbos, documentos simples. |
-| `logo-fundo-azul.jpg` | Arquivo antigo com fundo azul royal — **não usar** como cor da marca. Para logo sobre fundo escuro, use `logo-dourado.png` sobre o degradê azul-marinho. |
 | `simbolo-lotus-dourado/branco/azul.png` | Só a flor de lótus: ícones, rodapés, marca d'água, avatar, separadores. |
 | `midia/marca-originais/` (repositório) | Arquivos originais enviados pela Dra. — nunca alterar. |
 

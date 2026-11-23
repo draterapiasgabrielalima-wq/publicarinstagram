@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 // Exporta os materiais HTML da skill para PDF e/ou PNG.
 // Uso:
-//   node exportar.cjs arquivo.html --pdf        -> PDF A4 (plano de tratamento, manual)
-//   node exportar.cjs arquivo.html --png        -> um PNG 1080x1350 por .wa-card (WhatsApp)
-//   node exportar.cjs arquivo.html --pdf --png  -> ambos
+//   node exportar.js arquivo.html --pdf        -> PDF A4 (plano de tratamento, manual)
+//   node exportar.js arquivo.html --png        -> um PNG 1080x1350 por .wa-card (WhatsApp)
+//   node exportar.js arquivo.html --pdf --png  -> ambos
 // Saída: mesma pasta do HTML.
 const path = require('path');
 const { pathToFileURL } = require('url');
